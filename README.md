@@ -149,4 +149,4 @@ You can call the script with no argument and at the of the output provided with 
 ## Dependencies 
 Use this function in conjunction with `fn_main_args` which will add the functionality to parse your script arguments.
 
-You can download from here [main_args_fn.sh](snippets/4) ; Call the function with `fn_main_args $@`
+You can download from here [main_args_fn.sh](http://laravel.butonel.ro:8888/P6EPPM-OOTB/p6eppm-installer/snippets/4) ; Call the function with `fn_main_args $@`
