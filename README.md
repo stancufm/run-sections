@@ -150,3 +150,29 @@ You can call the script with no argument and at the of the output provided with 
 Use this function in conjunction with `fn_main_args` which will add the functionality to parse your script arguments.
 
 You can download from here [main_args_fn.sh](http://laravel.butonel.ro:8888/P6EPPM-OOTB/p6eppm-installer/snippets/4) ; Call the function with `fn_main_args $@`
+
+
+# Function for scripts arguments
+# main_args_fn.sh ( fn_main_args )
+## Usage
+##### Source it , call it
+Copy the function to the beginning of your script or simply just download it and source the file:
+`source main_args_fn.sh`
+
+Call the function at the beginning of your script with:`fn_main_args $@`
+
+##### More details
+When you'll run the script with arguments like `./script_name.sh --argument1 value_of_argument1 --argument2 value2`
+ the function will simply set a var named "argument1" and the value for var will be "value_of_argument1"
+basic it will do `argument1="value_of_argument1"` and you can use the var in your script.
+
+If you want more values to be set for the same argument:
+
+`./script_name.sh --argument1 value1 value2 --argument2 value3`
+
+then you'll have:
+- argument1="value1 value2"
+- argument2="value3"
+
+##### Helpful Tip
+You can use this function in conjunction with `fn_run_sections` which will add the functionality for you to run sections from you script
